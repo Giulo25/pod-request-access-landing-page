@@ -13,14 +13,13 @@ const validateEmail = function (mail) {
 };
 
 const validEmail = function () {
-	// body.classList.remove("error");
 	formMessage.innerHTML = "Thanks for your subscription!";
 	formMessage.style.color = "#54E6AF";
 	email.setAttribute("placeholder", "Email address");
 	email.value = "";
 };
 const invalidEmail = function () {
-	body.classList.add("error");
+	formMessage.style.visibility = "visible";
 };
 
 submit.addEventListener("click", function (e) {
