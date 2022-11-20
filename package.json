@@ -1,0 +1,12 @@
+{
+	"name": "pod-request-access-landing-page",
+	"version": "1.0.0",
+	"description": "![Design preview for the Pod request access landing page coding challenge](./preview.jpg)",
+	"main": "index.js",
+	"scripts": {
+		"devserver": "live-server --browser=firefox"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
