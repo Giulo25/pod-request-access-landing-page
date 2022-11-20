@@ -13,6 +13,7 @@ const validateEmail = function (mail) {
 };
 
 const validEmail = function () {
+	formMessage.style.visibility = "visible";
 	formMessage.innerHTML = "Thanks for your subscription!";
 	formMessage.style.color = "#54E6AF";
 	email.setAttribute("placeholder", "Email address");
