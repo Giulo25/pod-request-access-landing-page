@@ -103,9 +103,9 @@ form {
   letter-spacing: .2px;
   visibility: hidden;
 }
-.error .form-message {
+/* .error .form-message {
   visibility: visible;
-}
+} */
 input {
   border-radius: 999px;
   border: none;
