@@ -25,13 +25,10 @@ main {
   justify-content: flex-end;
   padding-left: 2rem;
 }
-/* .logo {
-  padding-left: 2rem;
 
-} */
 .pod-section {
-  /* border: 1px solid #fff; */
   background: url(assets/desktop/image-host.jpg) center right no-repeat;
+  /* uso flex perché max-width non funziona in flex item */
   flex: 0 1 127.5rem;
   height: 64rem;
   position: relative;
@@ -47,7 +44,6 @@ main {
   transform: translateY(-50%);
 }
 .content {
-  /* border: 1px solid #fff; */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -58,7 +54,6 @@ main {
   padding-right: 1rem;
 }
 h1 {
-  /* border: 1px solid #fff; */
   font-size: 5.2rem;
   font-weight: 300;
   line-height: 1.2;
@@ -66,15 +61,14 @@ h1 {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 2.4rem;
-  /* max-width: 25ch; */
 }
 h1 span {
   color: #fff;
 }
 p {
-  /* border: 1px solid #fff; */
   font-size: 1.8rem;
   line-height: 1.5;
+  font-weight: 300;
   color: #C2CBE5;
   margin: 0;
   margin-bottom: 4rem;
@@ -83,11 +77,10 @@ p {
 }
 .form-container {
   max-width: 60%;
-  min-width: 40rem;
+  min-width: 45rem;
   margin-bottom: 6.4rem;
 }
 form {
-  /* border: 1px solid #fff; */
   background-color: #2C344B ;
   display: flex;
   padding: .5rem;
@@ -103,9 +96,7 @@ form {
   letter-spacing: .2px;
   visibility: hidden;
 }
-/* .error .form-message {
-  visibility: visible;
-} */
+
 input {
   border-radius: 999px;
   border: none;
@@ -121,7 +112,7 @@ input[type=button] {
 }
 input[type=button]:hover {
   background-color: #B3FFE2;
-  
+
 }
 input[type=email] {
   background-color: #2C344B;
@@ -146,26 +137,102 @@ input[type=email]:focus {
   width: 25%;
 }
 
-/* @media (max-width: 62em) {
+@media (max-width: 60em) {
   h1 {
     font-size: 4.8rem;
     line-height: 1.2;
   }
   main {
-    background: var(--main-color) url(assets/desktop/bg-pattern-dots.svg) bottom left no-repeat;
-    height: 100rem;
     align-items: flex-start;
-
+    padding-left: 4rem;
+  }
+  .logo {
+    margin-top: 5rem;
+    transform: translateY(0%);
   }
   .pod-section {
     background: url(assets/tablet/image-host.jpg) top right no-repeat;
-    padding-top: 5rem;
-    padding-left: 4rem;
+    height: 77rem;
+  }
+  .pod-section::after {
+    bottom: -250px;
+    left: 0;
+    transform: translateY(0%);
   }
   .content {
-    width: 85%;
+    max-width: 85%;
+    padding-top: 5rem;
+  }
+  .form-container {
+    max-width: 60%;
+    min-width: 40rem;
+    margin-bottom: 4rem;
+  }
+
+}
+
+@media (max-width: 42em) {
+  main {
+    padding: 0;
+    height: 66.7rem;
+  }
+  .logo {
+    margin-top: 6rem;
+  }
+  .pod-section {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(18, 23, 37, 0.90) 0%, rgba(18, 23, 37, 0.90) 100%),
+    url(assets/mobile/image-host.jpg) top center / cover no-repeat;
+    flex: 1 1 auto;
+    max-width: 100%;
+    height: 67rem;
+    gap: 6rem;
+  }
+  .pod-section::after {
+    display: none;
+  }
+  .content {
+    max-width: 50rem;
+    width: 100%;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    padding-inline: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.6rem;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .form-container {
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 0;
+    order: 3;
   }
   form {
-    width: 80%;
+    background-color: transparent;
+    flex-direction: column;
+    padding: 0rem;
+    gap: 1.6rem;
+    border-radius: 0px;
   }
-} */
+  input[type=button] {
+    margin-left: 0;
+  }
+  .logos {
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+}
