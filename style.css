@@ -101,7 +101,6 @@ input {
   border-radius: 999px;
   border: none;
   padding: 1.8rem;
-  -webkit-padding: 1.8rem ;
 }
 input[type=button] {
   background-color: #54E6AF;
