@@ -102,7 +102,7 @@ input {
   border: none;
   padding: 1.8rem;
 }
-input[type=button] {
+input[type=submit] {
   background-color: #54E6AF;
   font-weight: 700;
   cursor: pointer;
@@ -110,7 +110,7 @@ input[type=button] {
   cursor: pointer;
   color: var(--main-color);
 }
-input[type=button]:hover {
+input[type=submit]:hover {
   background-color: #B3FFE2;
 
 }
@@ -228,10 +228,8 @@ input[type=email]:focus {
     gap: 1.6rem;
     border-radius: 0px;
   }
-  input[type=button] {
+  input[type=submit] {
     margin-left: 0;
-    height: 5.2rem;
-    border-radius: 999px;
   }
   .logos {
     margin-bottom: 5rem;
