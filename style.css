@@ -228,7 +228,7 @@ input[type=email]:focus {
   }
   input[type=submit] {
     margin-left: 0;
-    --webkit-appearance: button;
+    --webkit-appearance: none;
     padding: 1.8rem;
   }
   .logos {
