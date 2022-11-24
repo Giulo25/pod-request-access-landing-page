@@ -231,6 +231,7 @@ input[type=email]:focus {
   input[type=button] {
     margin-left: 0;
     height: 5.2rem;
+    border-radius: 999px;
   }
   .logos {
     margin-bottom: 5rem;
