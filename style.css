@@ -109,7 +109,6 @@ input[type=button] {
   margin-left: auto;
   cursor: pointer;
   color: var(--main-color);
-  line-height: 1.8rem;
 }
 input[type=button]:hover {
   background-color: #B3FFE2;
@@ -231,6 +230,7 @@ input[type=email]:focus {
   }
   input[type=button] {
     margin-left: 0;
+    height: 3rem;
   }
   .logos {
     margin-bottom: 5rem;
