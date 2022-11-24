@@ -107,12 +107,10 @@ input[type=submit] {
   font-weight: 700;
   cursor: pointer;
   margin-left: auto;
-  cursor: pointer;
   color: var(--main-color);
 }
 input[type=submit]:hover {
   background-color: #B3FFE2;
-
 }
 input[type=email] {
   background-color: #2C344B;
@@ -230,6 +228,8 @@ input[type=email]:focus {
   }
   input[type=submit] {
     margin-left: 0;
+    /* -webkit-appearance: button */
+    line-height: 5rem;
   }
   .logos {
     margin-bottom: 5rem;
