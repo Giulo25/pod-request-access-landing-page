@@ -228,8 +228,8 @@ input[type=email]:focus {
   }
   input[type=submit] {
     margin-left: 0;
-    /* -webkit-appearance: button */
-    line-height: 5rem;
+    --webkit-appearance: button;
+    padding: 1.8rem;
   }
   .logos {
     margin-bottom: 5rem;
