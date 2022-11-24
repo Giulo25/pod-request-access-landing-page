@@ -109,6 +109,7 @@ input[type=button] {
   margin-left: auto;
   cursor: pointer;
   color: var(--main-color);
+  line-height: 1.8rem;
 }
 input[type=button]:hover {
   background-color: #B3FFE2;
