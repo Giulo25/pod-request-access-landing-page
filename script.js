@@ -1,4 +1,4 @@
-const submit = document.querySelector("#button");
+const submit = document.querySelector("#submit");
 const email = document.querySelector("#email");
 const body = document.querySelector("body");
 const formContainer = document.querySelector(".form-container");
@@ -12,15 +12,16 @@ const validateEmail = function (mail) {
 	return false;
 };
 
-const validEmail = function () {
+const invalidEmail = function () {
 	formMessage.style.visibility = "visible";
+};
+
+const validEmail = function () {
+	invalidEmail();
 	formMessage.innerHTML = "Thanks for your subscription!";
 	formMessage.style.color = "#54E6AF";
 	email.setAttribute("placeholder", "Email address");
 	email.value = "";
-};
-const invalidEmail = function () {
-	formMessage.style.visibility = "visible";
 };
 
 submit.addEventListener("click", function (e) {
@@ -29,5 +30,6 @@ submit.addEventListener("click", function (e) {
 		this.disabled = true;
 	} else {
 		invalidEmail();
+		e.preventDefault();
 	}
 });
